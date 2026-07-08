@@ -1,19 +1,21 @@
-class Student {
 
-    int id;
-    String name;
-    double marks;
+    public class Student {
+    private String id;
+    private String name;
 
-    Student(int id, String name, double marks) {
+    public Student(String id, String name) {
         this.id = id;
         this.name = name;
-        this.marks = marks;
     }
 
-    void display() {
-        System.out.println("ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Marks: " + marks);
-        System.out.println("----------------");
+    public String getId() {
+        return id;
     }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
 }
+    }
